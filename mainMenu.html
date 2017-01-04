@@ -1,0 +1,60 @@
+  <!DOCTYPE html>
+  <html>
+  	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	  <!-- Compiled and minified CSS -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
+	  <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <!-- Compiled and minified JavaScript -->
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+
+    <body>
+	    <div class="container">
+	      <div class="row">
+	        <div class="col s12">
+	          <div class="card blue darken-4" style="text-align:center">
+	            <div class="card-content white-text">
+	              <span class="card-title">Καλώς ορίσατε στο συστήμα VOUCHER</span>
+	            </div> 
+	          </div> 
+	          <p class="flow-text">
+	          	{Username}
+	          </p>  
+	        </div>
+	       </div>
+
+	        <div class="col s11">
+	        	<p class="flow-text" style="text-align:center">
+	        	Για υποβολη αιτησης πατηστε το κουμπι "Διαδικασια Υποβολης Αιτησης VOUCHER".</p>
+	        </div>	 
+
+
+	    	<div class="row">
+				<div class="col s11 offset-s3">
+				  <a class="waves-effect waves-light btn" href="submitForm.html">Διαδικασια Υποβολης Αιτησης VOUCHER</a>		
+				</div>	    	
+	    	</div>
+
+	        <div class ="col">
+		        <div class="fixed-action-btn horizontal">
+				    <a class="btn-floating btn-large red">
+				      <i class="large material-icons">mode_edit</i>
+				    </a>
+				    <ul>
+				      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+				      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+				      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+				      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+				    </ul>
+		  		</div>
+	      	</div>
+	    </div>
+
+    <script>
+		$(document).ready(function() {
+		  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+		  $('.modal-trigger').leanModal();
+		});
+	</script>
+    </body>
+  </html>
