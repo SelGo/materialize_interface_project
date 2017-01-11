@@ -1,6 +1,6 @@
   <!DOCTYPE html>
   <html>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
     <!--Import Google Icon Font-->
@@ -10,79 +10,116 @@
 
     <body>
 
-    <div class="container">
-      <div class="row">
-        <div class="col s12" style="text-align:center">
-          <div class="card blue darken-4">
-            <div class="card-content white-text">
-              <span class="card-title">VOUCHER Μοριοδότηση και ανάδειξη οφειλουμένων</span>
+      <div class="container">
+        <div class="row">
+          <div class="col s12" style="text-align:center">
+            <div class="card blue darken-4">
+              <div class="card-content white-text">
+                <span class="card-title">VOUCHER Μοριοδότηση και ανάδειξη οφειλουμένων</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="row">
-        <div class="col">
-          <p class="flow-text">
-            Προθεσμια Υποβολης {Ημερα/Μηνας/Χρονος}
-          </p> 
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col s6 offset-s5">
-            <button data-target="modal1" class="btn modal-trigger">Αιτησεις</button>
+        <div class="row">
+          <div class="col">
+            <p class="flow-text">
+              Προθεσμια Υποβολης {Ημερα/Μηνας/Χρονος}
+            </p> 
           </div>
         </div>
-          <!-- Modal Structure -->
-        <div id="modal1" class="modal modal-fixed-footer">
+
+        <div class="row">
+          <div class="col s6 offset-s5">
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Αιτησεις</a>
+          </div>
+
+          <div id="modal1" class="modal">
+            <div class="modal-content">  
+              <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                  <div class="collapsible-header">Ονοματεπωνυμο Πολιτη<a href="#!" class="secondary-content"><input type="checkbox" id="test1"/><label for="test1"></label></a></div>
+                  <div class="collapsible-body">
+                    <p>Ηλικια<br>
+                       Διαρκεια Ανεργιας<br>
+                       ΑΦΜ<br>
+                       ΑΜΚΑ<br>
+                       Ημερομηνια Γεννησης<br>
+                       Αριθμός Κάρτας Ανεργίας<br>
+                       Αριθμός Δελτίου Ταυτότητας
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Ονοματεπωνυμο Πολιτη<a href="#!" class="secondary-content"><input type="checkbox" id="test2"/><label for="test2"></label></a></div>
+                  <div class="collapsible-body">
+                    <p>Ηλικια<br>
+                       Διαρκεια Ανεργιας<br>
+                       ΑΦΜ<br>
+                       ΑΜΚΑ<br>
+                       Ημερομηνια Γεννησης<br>
+                       Αριθμός Κάρτας Ανεργίας<br>
+                       Αριθμός Δελτίου Ταυτότητας
+                    </p>                
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Ονοματεπωνυμο Πολιτη<a href="#!" class="secondary-content"><input type="checkbox" id="test3"/><label for="test3"></label></a></div>
+                  <div class="collapsible-body">
+                    <p>Ηλικια<br>
+                       Διαρκεια Ανεργιας<br>
+                       ΑΦΜ<br>
+                       ΑΜΚΑ<br>
+                       Ημερομηνια Γεννησης<br>
+                       Αριθμός Κάρτας Ανεργίας<br>
+                       Αριθμός Δελτίου Ταυτότητας
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Μοριοδοτηση Επιλεγμενων Αιτησεων</a>
+              <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Ακυρωση</a>
+            </div>                      
+        </div>  
+      </div>
+      <div class="row">
+        <div class="col s6 offset-s4">
+            <a class="waves-effect waves-light btn modal-trigger" href="#modal2">Μοριοδοτημενες Αιτησεις</a>
+        </div>
+
+        <div id="modal2" class="modal">
           <div class="modal-content">  
             <ul class="collapsible" data-collapsible="accordion">
-              <li>
-                <div class="collapsible-header">Ονοματεπωνυμο Πολιτη<a href="#!" class="secondary-content"><input type="checkbox" id="test1"/><label for="test1"></label></a></div>
-                <div class="collapsible-body">
-                  <p>Ηλικια<br>
-                     Διαρκεια Ανεργιας<br>
-                     ΑΦΜ<br>
-                     ΑΜΚΑ<br>
-                     Ημερομηνια Γεννησης<br>
-                     Αριθμός Κάρτας Ανεργίας<br>
-                     Αριθμός Δελτίου Ταυτότητας
-                  </p>
-                </div>
-              </li>
-              <li>
-                <div class="collapsible-header">Ονοματεπωνυμο Πολιτη<a href="#!" class="secondary-content"><input type="checkbox" id="test2"/><label for="test2"></label></a></div>
-                <div class="collapsible-body">
-                  <p>Ηλικια<br>
-                     Διαρκεια Ανεργιας<br>
-                     ΑΦΜ<br>
-                     ΑΜΚΑ<br>
-                     Ημερομηνια Γεννησης<br>
-                     Αριθμός Κάρτας Ανεργίας<br>
-                     Αριθμός Δελτίου Ταυτότητας
-                  </p>                
-                </div>
-              </li>
-              <li>
-                <div class="collapsible-header">Ονοματεπωνυμο Πολιτη<a href="#!" class="secondary-content"><input type="checkbox" id="test3"/><label for="test3"></label></a></div>
-                <div class="collapsible-body">
-                  <p>Ηλικια<br>
-                     Διαρκεια Ανεργιας<br>
-                     ΑΦΜ<br>
-                     ΑΜΚΑ<br>
-                     Ημερομηνια Γεννησης<br>
-                     Αριθμός Κάρτας Ανεργίας<br>
-                     Αριθμός Δελτίου Ταυτότητας
-                  </p>
-                </div>
-              </li>
-            </ul>
+                <li>
+                  <div class="collapsible-header">Ονοματεπωνυμο Πολιτη</div>
+                  <div class="collapsible-body">
+                    <p>Πλήθος Μορίων<br>
+                       ΑΜΚΑ
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Ονοματεπωνυμο Πολιτη</div>
+                  <div class="collapsible-body">
+                    <p>Πλήθος Μορίων<br>
+                       ΑΜΚΑ
+                    </p>               
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Ονοματεπωνυμο Πολιτη</div>
+                  <div class="collapsible-body">
+                    <p>Πλήθος Μορίων<br>
+                       ΑΜΚΑ
+                    </p>
+                  </div>
+                </li>
+              </ul>
           </div>
-          <div class="modal-footer">
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Μοριοδοτηση Επιλεγμενων Αιτησεων</a>
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Ακυρωση</a>
-          </div> 
+        </div>         
+      </div>      
     </div>
 
     <script>
