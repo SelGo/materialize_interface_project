@@ -1,0 +1,70 @@
+  <!DOCTYPE html>
+  <html>
+  	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	  <!-- Compiled and minified CSS -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
+	  <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <!-- Compiled and minified JavaScript -->
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+
+    <body>
+    	<div class="container">
+	        <div class="row">
+	          <div class="col s12" style="text-align:center">
+	            <div class="card blue darken-4">
+	              <div class="card-content white-text">
+	                <span class="card-title">Διαδικασια Ενεργοποιησης Κουπονιου VOUCHER</span>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+
+	       	<div class="col s11">
+	        	<p class="flow-text" style="text-align:center">
+	        		Παρακαλουμε πληκτρολογηστε το 16ψηφιο κωδικο που σας αποσταλθηκε παρακατω.
+	        	</p>
+	        </div>
+
+	    	<div class="row">
+	    		<div class="col s6 offset-s3">
+		    		<div class="input-field col s12">
+				      <input value="" id="voucher_id_input" type="text" class="validate">
+				      <label class="active" for="voucher_id_input">VOUCHER_ID</label>
+				    </div>
+			    </div>
+	    	</div>	
+
+	    	<div class="row">
+		    	<div class="col s6 offset-s5">
+		          <button data-target="modal1" class="btn modal-trigger">Ενεργοποιηση</button>
+		        </div>
+	        </div>
+	          <!-- Modal Structure -->
+	        <div id="modal1" class="modal modal-fixed-footer">
+	          <div class="modal-content">
+	          	<p class="flow-text">
+	          		Η ενεργοποιηση ολοκληρωθηκε.<br>
+	          		Το κουπονι θα αποσταλει στην διευθυνση {e-mail χρηστη}.<br>
+	          		Αν τυχον δεν αποσταλει συντομα η υπαρξει απωλεια, επικοινωνηστε μαζι μας στο {e-mail εταιριας} η στο {τηλεφωνο εταιριας}.
+	          	</p>
+	          	<p class="flow-text">
+	          		Δεν ειστε δικαιουχος κατοχος κουπονιου η δεν εχετε υποβαλει καποια αιτηση.<br>
+	          		Παρακαλουμε ανατρεξτε στην αρχικη σελιδα και ελεγξτε αν εχετε υποβαλει η εχει ελεγχει επιτυχως η αιτηση σας.
+	          	</p>
+	          </div>
+	          <div class="modal-footer">
+	            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">ΟΚ</a>
+	          </div>
+	        </div>	
+
+    	</div>
+
+    <script>
+		$(document).ready(function() {
+		  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+		  $('.modal-trigger').leanModal();
+		});
+	</script>
+    </body>
+  </html>
