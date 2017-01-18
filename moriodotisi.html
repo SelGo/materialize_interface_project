@@ -9,7 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
 
     <body>
-
+    <title>VOUCHER</title>
       <div class="container">
         <div class="row">
           <div class="col s12" style="text-align:center">
@@ -26,19 +26,22 @@
             <p class="flow-text">
               Προθεσμια Υποβολης {Ημερα/Μηνας/Χρονος}
             </p> 
+            <p class="flow-text">
+              Αριθμος Κουπονιων {10.000}
+            </p>             
           </div>
         </div>
 
         <div class="row">
           <div class="col s6 offset-s5">
-              <a class="waves-effect waves-light btn modal-trigger center-align" href="#modal1">Αιτησεις</a>
+              <a class="waves-effect waves-light btn modal-trigger center-align" href="#modal1">Μοριοδοτηση</a>
           </div>
 
           <div id="modal1" class="modal">
             <div class="modal-content">  
               <ul class="collapsible" data-collapsible="accordion">
                 <li>
-                  <div class="collapsible-header">Ονοματεπωνυμο Πολιτη<a class="secondary-content"><input type="checkbox" id="test1"/><label for="test1"></label></a></div>
+                  <div class="collapsible-header">Ονοματεπωνυμο Πολιτη</div>
                   <div class="collapsible-body">
                     <p>Ηλικια<br>
                        Διαρκεια Ανεργιας<br>
@@ -51,7 +54,7 @@
                   </div>
                 </li>
                 <li>
-                  <div class="collapsible-header">Ονοματεπωνυμο Πολιτη<a class="secondary-content"><input type="checkbox" id="test2"/><label for="test2"></label></a></div>
+                  <div class="collapsible-header">Ονοματεπωνυμο Πολιτη</div>
                   <div class="collapsible-body">
                     <p>Ηλικια<br>
                        Διαρκεια Ανεργιας<br>
@@ -64,7 +67,7 @@
                   </div>
                 </li>
                 <li>
-                  <div class="collapsible-header">Ονοματεπωνυμο Πολιτη<a class="secondary-content"><input type="checkbox" id="test3"/><label for="test3"></label></a></div>
+                  <div class="collapsible-header">Ονοματεπωνυμο Πολιτη</div>
                   <div class="collapsible-body">
                     <p>Ηλικια<br>
                        Διαρκεια Ανεργιας<br>
@@ -79,22 +82,20 @@
               </ul>
             </div>
             <div class="modal-footer">
-              <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Μοριοδοτηση Επιλεγμενων Αιτησεων</a>
-              <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Ακυρωση</a>
+              <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Μοριοδοτηση Αιτησεων</a>
+              <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Ακυρωση</a>
             </div>                      
         </div>  
       </div>
 
       <div class="row">
-        <div class="col s6 offset-s4">
-            <a class="waves-effect waves-light btn modal-trigger center-align" href="#modal2">Μοριοδοτημενες Αιτησεις</a>
-        </div>
-
-        <div id="modal2" class="modal">
-          <div class="modal-content">  
+        <div class="col s6 offset-s3">
+            <p class="flow-text">
+              Μοριοδοτημενες Αιτησεις
+            </p>
             <ul class="collapsible" data-collapsible="accordion">
                 <li>
-                  <div class="collapsible-header">Ονοματεπωνυμο Πολιτη</div>
+                  <div class="collapsible-header">Ονοματεπωνυμο Πολιτη<a class="secondary-content"><input type="checkbox" id="test1"/><label for="test1"></label></a></div>
                   <div class="collapsible-body">
                     <p>Πλήθος Μορίων<br>
                        ΑΜΚΑ
@@ -102,7 +103,7 @@
                   </div>
                 </li>
                 <li>
-                  <div class="collapsible-header">Ονοματεπωνυμο Πολιτη</div>
+                  <div class="collapsible-header">Ονοματεπωνυμο Πολιτη<a class="secondary-content"><input type="checkbox" id="test2"/><label for="test2"></label></a></div>
                   <div class="collapsible-body">
                     <p>Πλήθος Μορίων<br>
                        ΑΜΚΑ
@@ -110,23 +111,36 @@
                   </div>
                 </li>
                 <li>
-                  <div class="collapsible-header">Ονοματεπωνυμο Πολιτη</div>
+                  <div class="collapsible-header">Ονοματεπωνυμο Πολιτη<a class="secondary-content"><input type="checkbox" id="test3"/><label for="test3"></label></a></div>
                   <div class="collapsible-body">
                     <p>Πλήθος Μορίων<br>
                        ΑΜΚΑ
                     </p>
                   </div>
                 </li>
-              </ul>
-          </div>
-
-          <div class="modal-footer">
-            <a href="#modal3" class="modal-action modal-close waves-effect waves-green btn-flat ">Αποστολη κουπουνιων</a>
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Ακυρωση</a>
-          </div>     
-
+              </ul>                              
         </div>
       </div>
+
+      <div class="row">
+          <div class="col s6 offset-s4">
+              <a class="waves-effect waves-light btn modal-trigger center-align" href="#modal2">Αναδειξη ωφελουμενων</a>
+          </div>
+
+          <div id="modal2" class="modal">
+            <div class="modal-content">
+              <p class="flow-text">
+                Η διαδικασια ολοκληρωθηκε.
+              </p> 
+              <p class="flow-text">
+                Δεν υπαρχουν διαθεσιμα κουπουνια.
+              </p>   
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">ΟΚ</a>
+            </div>                      
+        </div>  
+      </div>       
 
       <div class="row">
           <div class="col s6 offset-s3 center-align">
@@ -186,6 +200,12 @@
               <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">ΟΚ</a>
             </div>                      
         </div>  
+      </div>
+
+      <div class="row">
+        <div class="col s6 offset-s3 center-align">
+            <a class="btn" href="UserAdminPrompt.html">Αποσυνδεση</a>
+        </div>
       </div>
 
     </div>
